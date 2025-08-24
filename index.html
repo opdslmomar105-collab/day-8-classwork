@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 7 Classwork</title>
+</head>
+<body>
+  <script>
+    let name = prompt("What is your name?");
+    let age = prompt("How old are you?");
+    age = parseInt(age); 
+
+    function checkAge(age) {
+      if (age >= 18) {
+        return "You can drive";
+      } else {
+        return "You're too young to drive";
+      }
+    }
+
+    let result = checkAge(age);
+    alert("Hello " + name + ", " + result);
+  </script>
+</body>
+</html>
